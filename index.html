@@ -2,84 +2,33 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
 	<title>My Portfolio</title>
 
 	<link rel="stylesheet" type="text/css" href="styles/bootstrap.min.css">
 	
-	<link rel="stylesheet" type="text/css" href-"myStyles.css">
+	<link rel="stylesheet" type="text/css" href="myStyles.css">
 
-	<style>
-	#projects {
-		background-color: #2b2b2b;
-	}
-
-	#about {
-		background-color: #e1e1e1;
-		text-align: center;
-		width: 100%;
-	}
-
-	#footer {
-		background-color: #e1e1e1;
-		text-align: center;
-	}
-
-	h2, h3 {
-		color: black;
-	}
-
-	#musicStore {
-		text-align: center;
-		background-color: #c0c0c0;
-	}
-
-	#title h1 {
-		text-align: center;
-		color: #d31414;
-	}
-
-	h1 {
-		color: #d31414;
-	}
-
-	#title {
-		background-color: #2b2b2b;
-	}
-
-	#navBar {
-		position: absolute;
-
-	}
-
-	#aboutPara {
-
-	}
-
-	</style>
-	
 </head>
+
 <body>
-	<div id ="wrapper">
+	<div class ="container-fluid">
 		<div id="title">
 			<br>
 			<h1>Aaron Ollis Portfolio</h1>
 			<br>
 			<br>
-
-
 		</div>
 
 		<header>
 			<div id="navBar">
 				<nav class="navbar navbar-default">
-				    <ul class="nav navbar-nav">
-				    	<li class="active" id="homeButton"><a href="#">Home</a></li>
-				        <li class="active" id="aboutButton"><a href="#">About</a></li>
-				        <li class="active" id="projectsButton"><a href="#">Projects</a></li> 
-				        <li class="active" id="contactButton"><a href="#">Contact</a></li> 
+					<ul class="nav navbar-nav">
+						<li class="active" id="homeButton"><a href="#">Home</a></li>
+						<li class="active" id="aboutButton"><a href="#">About</a></li>
+						<li class="active" id="projectsButton"><a href="#">Projects</a></li> 
+						<li class="active" id="contactButton"><a href="#">Contact</a></li> 
 				    </ul>
 				</nav>
 			</div>
@@ -91,7 +40,7 @@
 
 		<div id="about">
 			<br>
-			<h3 id="aboutPara">Hi, I'm Aaron, a full-stack web developer with a focus on exceptional front-end design and user experience. <br>I recently graduated from Portland Code School and am now actively looking for experience in the industry.<h3>
+			<h3 id="aboutPara">Hi, I'm Aaron, a full-stack web developer who recently graduated from Portland Code School. I am now actively looking for experience while also continuing to stuff my brain with as much knowledge as possible.<h3>
 				<br>
 
 			<h1>Projects I have worked on</h1>
@@ -104,7 +53,12 @@
 		</div>
 
 		<div id="projects">
-			<img src="images/customerApp.png" alt="app">
+			<div class="row">
+				<div class="col-sm-4"><img src="images/customerApp.png" alt="app"></div>
+				<div class="col-sm-4" id="column2">This Music Store Project uses mostly Angular and Jquery to allow users to register, login, and add items to their cart. <br><br> The users can also check out items, and can proceed through an order process. <br><br> The main tools used were data binding, filtering, services, factories, controllers and jQuery animations</div>
+			</div>
+
+			
 		</div>
 
 		<br>
@@ -118,39 +72,12 @@
 			<h3>"So many men, they risk so little. They spend their whole lives avoiding danger, and then they die. I'd risk everything to get what I want."</h3>
 			<br>
 		</div>
-		
 	
 	</div>
 
 	<script src="bower_components/jquery/dist/jquery.js"></script>
 	<script src="scripts/bootstrap.js"></script>
 	<script src="scripts/app.js"></script>
-	<script>
-		$("#homeButton").click(function() {
-    	$('html, body').animate({
-        	scrollTop: $("#navBar").offset().top},
-        	1300);
-		});
-		
-		$("#aboutButton").click(function() {
-		$('html, body').animate({
-        	scrollTop: $("#about").offset().top},
-        	1300);
-		});
-
-		$("#projectsButton").click(function() {
-    	$('html, body').animate({
-        	scrollTop: $("#projects").offset().top},
-        	1300);
-		});
-
-		$("#contactButton").click(function() {
-    	$('html, body').animate({
-        	scrollTop: $("#footer").offset().top},
-        	1300);
-		});
-
-	</script>
 
 </body>
 

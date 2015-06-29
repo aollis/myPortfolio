@@ -35,9 +35,16 @@
 		position: absolute;
 	}
 
-	#column2 {
+	#column1 {
 		position: relative;
 		float: right;
+	}
+
+	#column2 {
+		position: relative;
+		float: left;
 		width: 35%;
 		top: 0;
 	}
+
+

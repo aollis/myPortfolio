@@ -36,22 +36,20 @@ h1 {
 	/*color: #2c76ca;*/
 }
 
-#navBar {
-	position: fixed;
-	}
 
 #column2 {
 	position: relative;
 	float: right;
 	width: 55%;
 	right: 0;
+	padding-top: 1%;
 }
 
 #column1 {
 	position: relative;
 	float: left;
 	width: 35%;
-	top: 0;
+	padding-top: 2.5%;
 	left: 4.5%;
 }
 
@@ -67,6 +65,10 @@ h1 {
 #projects {
 	background-color: #d3eaf6;
 
+}
+
+#projectsRow {
+	border: 2px solid black;
 }
 
 

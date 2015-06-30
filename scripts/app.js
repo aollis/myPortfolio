@@ -1,7 +1,7 @@
 
 $("#homeButton").click(function() {
 	$('html, body').animate({
-        scrollTop: $("#navBar").offset().top},
+        scrollTop: $("#banner").offset().top},
         1300);
 });
 		
@@ -19,6 +19,6 @@ $("#projectsButton").click(function() {
 
 $("#contactButton").click(function() {
     $('html, body').animate({
-    	scrollTop: $("#footer").offset().top},
+    	scrollTop: $("#contact").offset().top},
        	1300);
 });

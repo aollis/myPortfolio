@@ -29,7 +29,11 @@ h2, h3 {
 }
 
 h1 {
-	color: #d31414;
+	/*color: #d31414;*/
+	/*color: #006fbc;*/
+	color: #03538b;
+	/*color: #1784d1;*/
+	/*color: #2c76ca;*/
 }
 
 #navBar {
@@ -64,5 +68,6 @@ h1 {
 	background-color: #d3eaf6;
 
 }
+
 
 

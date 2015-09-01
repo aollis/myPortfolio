@@ -17,6 +17,7 @@
 		var myPortfolio = angular.module('myPortfolio', []);
 		myPortfolio.controller('mainController', function ($scope) {
 			$scope.view = 'musicStore';
+
 		});
 	</script>
 
@@ -64,38 +65,44 @@
 	    	</div>
 		</div>
 
-		<div id="musicStore" ng-show="view == 'musicStore'">
-			<div class="row"> 
-				<div class="col-sm-4" id="column2"><img ng-src="images/orderForm.png" alt="musicStore"></div>
-				<div class="col-sm-4" id="column1">This Music Store Project uses mostly Angular and Jquery to allow users to register, login, and add items to their cart. The users can also check out items, and can proceed through an order process. The main tools used were data binding, filtering, services, factories, controllers and jQuery animations
+		<div id="wrapper">
+
+			<div id="musicStore" ng-show="view == 'musicStore'">
+				<div class="row"> 
+					<div class="col-sm-4" id="column2"><img ng-src="images/orderForm.png" alt="musicStore"></div>
+					<div class="col-sm-4" id="column1">This Music Store Project uses mostly Angular and Jquery to allow users to register, login, and add items to their cart. The users can also check out items, and can proceed through an order process. The main tools used were data binding, filtering, services, factories, controllers and jQuery animations
+					</div>
 				</div>
 			</div>
+
+			<div id="orderform" ng-show="view == 'orderForm'">
+				<p>test</p>
+			</div>
+
+
+			<div id="questionairre" ng-show="questionairre">
+			</div>
+
+
+			<div id="timer" ng-show="timer">
+			</div>
+
+
+			<div id="table" ng-show="table">
+			</div>
+
 		</div>
 
-		<div id="orderform" ng-show="view == 'orderForm'">
-			<p>test</p>
-		</div>
+		<div id="wrapper2">
 
 
-		<div id="questionairre" ng-show="questionairre">
-		</div>
+			<div id="contact">
+				<h2>Phone: 805-637-8885</h2>
+				<h2>Email: aaronollis121@gmail.com</h2>
+				<h2>Github: aollis@github.com<h2>
+				<h2>linkedIn: https://www.linkedin.com/in/aaronollis<h2>
+			</div>
 
-
-		<div id="timer" ng-show="timer">
-		</div>
-
-
-		<div id="table" ng-show="table">
-		</div>
-
-
-
-
-		<div id="contact">
-			<h2>Phone: 805-637-8885</h2>
-			<h2>Email: aaronollis121@gmail.com</h2>
-			<h2>Github: aollis@github.com<h2>
-			<h2>linkedIn: https://www.linkedin.com/in/aaronollis<h2>
 		</div>
 
 		<script>

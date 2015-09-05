@@ -35,7 +35,7 @@
 			})
 
 			.when('/orderForm', {
-				templateUrl: '/templates/home.html',
+				templateUrl: '/templates/orderForm.html',
 				controller: 'mainController'
 			})
 
@@ -102,33 +102,16 @@
 		</div>
 	</header>
 
-	<div ng-controller="mainController" ng-app="myPortfolio">
+	<div ng-app="myPortfolio" ng-controller="mainController" >
 		<div class="container-fluid">
-<!-- 			<div class="navbar navbar-static">
-		    	<div class="navbar-inner">
-		       		<a href="#/musicStore" class="brand">Nav</a>
-		       		<ul role="navigation" class="nav">
-		           		<li class="dropdown">
-		             		<a href="#" data-toggle="dropdown" class="dropdown-toggle">Projects <b class="caret"></b></a>
-		               		<ul class="dropdown-menu">
-		                  		<li><a href="#">Music Store</a></li>
-		                   		<li><a href="#">Order Form</a></li>
-		                   		<li><a href="#">Questionairre</a></li>
-		                   		<li><a href="#">Timer</a></li>
-		                   		<li><a href="#">Angular Food Table</a></li>
-		               		</ul>
-		            	</li>
-		        	</ul>
-		    	</div>
-			</div> -->
-
 			<div class="nav-list">
 				<a href="#/musicStore"> Music Store </a>
 
 			</div>
 
-			<div ng-view></div>
-
+			<div id="view">
+				<div ng-view></div>
+			</div>
 
 
 			<div id="contact">
@@ -140,9 +123,6 @@
 
 		</div>
 	</div>
-
-
-
 
 </body>
 

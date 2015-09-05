@@ -41,15 +41,15 @@ h2, h3 {
 	margin-left: 41%;
 }
 
-#wrapper {
-	background-color: #d7eeff;
-}
-
 .nav-list {
 	margin-top: 5%;
 	margin-bottom: 5%;
 	text-align: center;
 	font-size: 200%;
+}
+
+#view {
+	background-color: #d7eeff;
 }
 
 
